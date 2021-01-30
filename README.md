@@ -19,4 +19,3 @@ Google, Naver Oauth2 사용
 
 (F) (데이터 제공기관→앱) 사용자 데이터를 제공합니다. 이때 앱이 제출한 접근 토큰이 유효함을 확인하고, 접근 토큰의 정보를 확인하여 제공할 데이터 항목, 범위 및 유효기간이 정해집니다.
 
-출처:http://www.2e.co.kr/news/articleView.html?idxno=208594
