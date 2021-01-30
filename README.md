@@ -1,6 +1,6 @@
 # SpringSecurity-OAuth2
 
-Google, Naver Oauth2 사용
+Google, Naver Oauth2 사용 로그인 및 회원가입 
 
 <br><br>
 
