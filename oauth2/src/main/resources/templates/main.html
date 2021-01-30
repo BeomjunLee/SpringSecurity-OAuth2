@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>OAuth2</title>
+</head>
+<body>
+<div>
+    <div>
+        <div th:if="${username != null}">
+            <img style="width:45px; height:45px" th:src="${userImg}"> <!-- 구글 계정 이미지 -->
+            <span th:text="${username}">사용자</span> 님 안녕하세요. <!-- 구글 계정 이름 -->
+            <a th:href="@{/logout}">Logout</a> <!-- logout은 security에서 제공 -->
+        </div>
+        <div th:if="${username == null}">
+            <a href="/oauth2/authorization/google">Google Login</a> <!-- 구글 로그인 (구글 제공) -->
+        </div>
+    </div>
+</div>
+</body>
+</html>
