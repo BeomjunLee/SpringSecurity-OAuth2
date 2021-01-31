@@ -1,5 +1,6 @@
 package com.oauth2.controller;
 
+import com.oauth2.annotation.LoginMember;
 import com.oauth2.domain.SessionMember;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
@@ -13,8 +14,7 @@ import javax.servlet.http.HttpSession;
 public class OAuthController {
 
     @GetMapping("/main")
-    public String index(Model model, HttpSession session) {
-        SessionMember member = (SessionMember) session.getAttribute("member");
+    public String index(Model model, @LoginMember SessionMember member) {
 
         if(member != null) {
             model.addAttribute("username", member.getName());
