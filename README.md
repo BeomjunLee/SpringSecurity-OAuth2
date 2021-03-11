@@ -1,6 +1,7 @@
 # SpringSecurity-OAuth2
 
-Google, Naver Oauth2 사용 로그인 및 회원가입 구현해보기 (session)
+Google, Naver Oauth2 사용 로그인 및 회원가입 구현해보기 (session)<br>
+https://blog.naver.com/qjawnswkd/222226088125
 
 <br><br>
 
