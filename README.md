@@ -1,11 +1,11 @@
-# SpringSecurity-OAuth2
+## SpringSecurity-OAuth2
 
-Google, Naver Oauth2 사용 로그인 및 회원가입 구현해보기 (session)<br>
+### Google, Naver Oauth2 사용 로그인 및 회원가입 구현해보기 (session)
 https://blog.naver.com/qjawnswkd/222226088125
 
 <br><br>
 
-## OAuth2 AcccessToken, RefreshToken (추가예정)
+### OAuth2 AcccessToken, RefreshToken (추가예정)
 
 - (앱→사용자) 사용자 데이터에 접근하기 위한 권한을 요청합니다. 개념상 앱이 사용자에게 요청하지만, 실제 구현은 앱과 사용자 사이에 권한 제공기관이 중개 역할을 하는 경우가 일반적입니다.
 
