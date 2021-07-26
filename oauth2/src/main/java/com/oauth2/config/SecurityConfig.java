@@ -1,4 +1,4 @@
-package com.oauth2.oauth2;
+package com.oauth2.config;
 
 import com.oauth2.service.CustomOAuth2MemberService;
 import lombok.RequiredArgsConstructor;

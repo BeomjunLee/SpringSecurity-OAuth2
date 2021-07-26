@@ -68,4 +68,37 @@ public class CustomOAuth2MemberService implements OAuth2UserService<OAuth2UserRe
                 .orElse(attributes.toEntity());
         return memberRepository.save(member);
     }
+
+//    @Override
+//    public OAuth2User loadUser(OAuth2UserRequest userRequest) throws OAuth2AuthenticationException {
+//
+//        OAuth2UserService<OAuth2UserRequest, OAuth2User> service = new DefaultOAuth2UserService();
+//        OAuth2User oAuth2User = service.loadUser(userRequest);
+//
+//        //현재 진행중인 로그인이 어디 로그인인지 구분(구글, 네이버, 페이스북....)
+//        String registrationId = userRequest
+//                .getClientRegistration()
+//                .getRegistrationId();
+//
+//        //ouath2 로그인 진행시 키가되는 필드값 ex) pk
+//        //구글의 기본코드 : sub
+//        //네이버 + 구글 동시 지원할때 사용
+//        String userNameAttributeName = userRequest.getClientRegistration()
+//                .getProviderDetails()
+//                .getUserInfoEndpoint()
+//                .getUserNameAttributeName();
+//
+//        //OAuthAttributes : attribute 를 담을 class
+//        OAuthAttributes oAuthAttributes = OAuthAttributes.of(registrationId, userNameAttributeName, oAuth2User.getAttributes());
+//
+//        Member member = saveOrUpdate(oAuthAttributes);
+//
+//        //세션에 사용자 정보 저장
+//        session.setAttribute("member", new SessionMember(member));
+//
+//        return new DefaultOAuth2User(
+//                Collections.singleton(new SimpleGrantedAuthority(member.getRole())),
+//                oAuthAttributes.getAttributes(), oAuthAttributes.getNameAttributeKey()
+//        );
+//    }
 }
